@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
+    "gatsby-plugin-netlify",
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
