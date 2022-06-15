@@ -3,6 +3,7 @@ import Nav from "./nav"
 import Footer from "./Footer"
 import { MDXProvider } from "@mdx-js/react"
 import { getImage, GatsbyImage, StaticImage } from 'gatsby-plugin-image'
+import "./layout.css"
 
 const Layout = ({ children }) => {
   const shortcodes = { getImage, GatsbyImage, StaticImage }

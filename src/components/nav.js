@@ -485,7 +485,7 @@ return (
 <div className="sticky top-0 z-50 bg-white ">
 <div className="bg-white py-4 md:py-8 ">
 
-<div className="flex flex-wrap content-center hidden sm:flex-nowrap sm:block sm:visible">
+<div className="flex-wrap content-center hidden sm:flex-nowrap sm:block sm:visible">
 <NavigationMenu>
     <div className="mx-3 md:mx-8">
     <Link to="/" >
