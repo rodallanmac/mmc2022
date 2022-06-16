@@ -51,23 +51,6 @@ const fadeOut = keyframes({
   to: { opacity: 0 },
 });
 
-const StyledMenu = styled(NavigationMenuPrimitive.Root, {
-  position: 'relative',
-  display: 'flex',
-  justifyContent: 'center',
-  width: '100vw',
-  zIndex: 1,
-});
-
-const StyledList = styled(NavigationMenuPrimitive.List, {
-  all: 'unset',
-  display: 'flex',
-  justifyContent: 'center',
-  backgroundColor: 'white',
-  padding: 4,
-  borderRadius: 6,
-  listStyle: 'none'
-});
 
 const itemStyles = {
   padding: '8px 12px',
@@ -186,8 +169,7 @@ const StyledViewport = styled(NavigationMenuPrimitive.Viewport, {
 });
 
 // NAV Exports
-const NavigationMenu = StyledMenu;
-const NavigationMenuList = StyledList;
+
 const NavigationMenuItem = NavigationMenuPrimitive.Item;
 const NavigationMenuTrigger = StyledTriggerWithCaret;
 const NavigationMenuLink = StyledLink;
@@ -486,14 +468,14 @@ return (
 <div className="bg-white py-4 md:py-8 ">
 
 <div className="flex-wrap content-center hidden sm:flex-nowrap sm:block sm:visible">
-<NavigationMenu>
+<NavigationMenu className="flex justify-center w-screen z-10 relative">
     <div className="mx-3 md:mx-8">
     <Link to="/" >
         <img className="h-12 md:h-12 lg:h-14 " src={logo} alt='musgrave methodist church'/>
     </Link>
     </div>
 
-     <NavigationMenuList>
+     <NavigationMenuList classNmae="flex justify-center p-1 rounded-lg list-none">
 
       <NavigationMenuItem>
           <NavigationMenuLink href="/">Home</NavigationMenuLink>
